@@ -1,0 +1,43 @@
+<div class="login-container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="registoForm" #formDir="ngForm">
+    <h3>Registo</h3>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Nome</span>
+      <input type="nome" formControlName="nome" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div *ngIf="nome.invalid && formDir.submitted" class="validacao-erro">
+      <p *ngIf="nome.errors?.['required']">Nome é obrigatório</p>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+      <input type="email" formControlName="email" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div *ngIf="email.invalid && formDir.submitted" class="validacao-erro">
+      <p *ngIf="email.errors?.['required']">Email é obrigatório</p>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Palavra-Passe</span>
+      <input type="password" formControlName="password" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm">
+    </div>
+
+    <div *ngIf="password.invalid && formDir.submitted" class="validacao-erro">
+      <p *ngIf="password.errors?.['required']">Password é obrigatório</p>
+    </div>
+    <div class="input-group input-group-sm mb-3">
+      <span class="input-group-text" id="inputGroup-sizing-sm">Confirmar Palavra-Passe</span>
+      <input type="password" formControlName="cpassword" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div *ngIf="cpassword.invalid && formDir.submitted" class="validacao-erro">
+      <p *ngIf="cpassword.errors?.['required']">Confirmação da Password é obrigatório</p>
+    </div>
+    <div *ngIf="cpassword.value!=password.value && formDir.submitted" class="validacao-erro">
+      <p>Confirmação da Password e Password diferentes</p>
+    </div>
+    <a routerLink="" class="btn btn-primary" style="margin-right: 10px;"><router-outlet></router-outlet>Voltar</a>
+    <button type="submit" class="btn btn-success">Confirmar</button>
+  </form>
+</div>

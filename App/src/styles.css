@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+.validacao-erro p{
+  color: #DC3545;
+  border-left: 3px solid #DC3545;
+  text-align: left;
+}
