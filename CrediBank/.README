@@ -1,0 +1,27 @@
+Para executar a aplicação:
+> Instalar o Node
+
+executar os comandos para instalar as dependências:
+npm install
+npm install -g json-server --save
+npm install needle
+
+Para executar o servidor:
+(executar o comando dentro da pasta CrediBank)
+
+DB json :
+ 
+> json-server --watch db.json --port 3004
+
+url: http://localhost:3004/
+
+
+API's - CreditBank:
+
+node app.js
+
+url: http://localhost:3000/
+
+#Exemplo para gerar um cheque de 10 euros na conta nº 1:
+
+http://localhost:3000/check/1/10

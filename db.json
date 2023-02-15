@@ -1,0 +1,63 @@
+{
+  "contas": [
+    {
+      "saldo": 0,
+      "id": 1
+    }
+  ],
+  "cheques": [
+    {
+      "id": 1,
+      "date": "2023-01-07T20:40:14.100Z",
+      "checkID": 8782991491824854,
+      "estado": "inativo",
+      "contaId": "1"
+    },
+    {
+      "date": "2023-01-07T21:19:54.017Z",
+      "checkID": 2350353640403054,
+      "estado": "ativo",
+      "contaId": "1",
+      "id": 2
+    },
+    {
+      "date": "2023-01-07T21:20:05.737Z",
+      "checkID": 1040259533058534,
+      "estado": "ativo",
+      "contaId": "1",
+      "id": 3
+    },
+    {
+      "date": "2023-01-07T21:20:19.451Z",
+      "checkID": 3279250459925931,
+      "estado": "ativo",
+      "contaId": "1",
+      "id": 4
+    },
+    {
+      "date": "2023-01-07T21:20:24.421Z",
+      "checkID": 9357712514063056,
+      "estado": "ativo",
+      "contaId": "1",
+      "id": 5
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Paulino Jonas",
+      "nif": 308196252,
+      "contaId": 1,
+      "email": "paulino@gmail.com",
+      "password": "paulino123"
+    },
+    {
+      "nome": "Paulino Jonas",
+      "nif": 308196252,
+      "contaId": 1,
+      "email": "paulino@gmail.com",
+      "password": "paulino123",
+      "id": 2
+    }
+  ]
+}
