@@ -1,1 +1,37 @@
-<p>apostar works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Euromilhões</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="numbers">Números</label>
+            <input type="text" class="form-control" id="numbers" [(ngModel)]="numbers" placeholder="Insira 5 números (1-50)">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="stars">Estrelas</label>
+            <input type="text" class="form-control" id="stars" [(ngModel)]="stars" placeholder="Insira 2 estrelas (1-12)">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-primary" (click)="generateNumbers()">Gerar Números</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h3>Como jogar?</h3>
+        <p>Escolha 5 números entre 1 e 50 e 2 estrelas entre 1 e 12.</p>
+        <p>Boa sorte!</p>
+      </div>
+    </div>
+  </div>
+</div>
