@@ -29,6 +29,14 @@
       "contaId": 1,
       "email": "paulino@gmail",
       "password": "paulino123"
+    },
+    {
+      "nome": "Paulino Jonas",
+      "nif": 308196252,
+      "contaId": 1,
+      "email": "paulino@gmail.com",
+      "password": "paulino123",
+      "id": 2
     }
   ]
 }
